@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #121212;
+    color: white;
+}
+
+.logo {
+    color: #f5c542;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5c542;
+}
+
+/* HOME */
+.home {
+    height: 80vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("watchHome.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.home-content h2 {
+    font-size: 46px;
+}
+
+.home-content p {
+    font-size: 22px;
+    color: #f5c542;
+}
+
+/* BUTTONS */
+.shop-btn, .promo-btn, .newsletter button {
+    background: #f5c542;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.shop-btn:hover, .promo-btn:hover, .newsletter button:hover {
+    background: black;
+    color: #f5c542;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+/* PROMO */
+.promo {
+    background: linear-gradient(135deg,#000,#333);
+    color: white;
+    padding: 60px 20px;
+}
+
+.promo span {
+    color: #f5c542;
+    font-size: 26px;
+}
+
+/* COLLECTION */
+.collection {
+    padding: 60px 20px;
+    background: #ececec;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.badge {
+    background: #f5c542;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.hot {
+    background: red;
+    color: white;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    background: #fff;
+    padding: 60px 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 220px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 20px;
+    background-color: #121212;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: #aaa;
+    padding: 15px;
+}
