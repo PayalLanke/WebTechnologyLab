@@ -25,21 +25,21 @@
       <h2>Student Details</h2>
 
       <div class="field">
-        <input type="text" required>
+        <input type="text" id="name" required>
         <label>Name</label>
-        <small>Required</small>
+        <small>Only alphabets allowed</small>
       </div>
 
       <div class="field">
-        <input type="text" required>
+        <input type="text" id="roll" required>
         <label>Roll No</label>
-        <small>Required</small>
+        <small>Only numbers allowed</small>
       </div>
 
       <div class="field">
-        <input type="text" required>
+        <input type="text" id="div" maxlength="1" required>
         <label>DIV</label>
-        <small>Required</small>
+        <small>Single alphabet only</small>
       </div>
 
       <button class="next">Next</button>
@@ -50,19 +50,19 @@
       <h2>Academic Details</h2>
 
       <div class="field">
-        <input type="text" required>
+        <input type="text" id="prn" required>
         <label>PRN</label>
-        <small>Required</small>
+        <small>Only numbers allowed</small>
       </div>
 
       <div class="field">
-        <input type="text" required>
+        <input type="text" id="class" required>
         <label>Class</label>
-        <small>Required</small>
+        <small>Alphanumeric only</small>
       </div>
 
       <div class="field">
-        <select required>
+        <select id="subject" required>
           <option value="" disabled selected></option>
           <option>ADS</option>
           <option>Ethical Hacking</option>
@@ -70,7 +70,7 @@
           <option>IoT</option>
         </select>
         <label>Subject</label>
-        <small>Required</small>
+        <small>Please select a subject</small>
       </div>
 
       <button class="prev">Back</button>
@@ -80,7 +80,7 @@
   </div>
 </div>
 
-<div class="toast error">⚠ Please fill all fields</div>
+<div class="toast error">⚠ Please correct highlighted fields</div>
 <div class="toast success">✅ Successfully Submitted</div>
 
 <script src="script.js"></script>
