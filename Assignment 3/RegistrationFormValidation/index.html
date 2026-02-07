@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Open Elective Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+  <h1 class="page-title">Open Elective Subject Registration Form</h1>
+
+  <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+
+  <div class="card">
+
+    <!-- STEP 1 -->
+    <div class="step active">
+      <h2>Student Details</h2>
+
+      <div class="field">
+        <input type="text" required>
+        <label>Name</label>
+        <small>Required</small>
+      </div>
+
+      <div class="field">
+        <input type="text" required>
+        <label>Roll No</label>
+        <small>Required</small>
+      </div>
+
+      <div class="field">
+        <input type="text" required>
+        <label>DIV</label>
+        <small>Required</small>
+      </div>
+
+      <button class="next">Next</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step">
+      <h2>Academic Details</h2>
+
+      <div class="field">
+        <input type="text" required>
+        <label>PRN</label>
+        <small>Required</small>
+      </div>
+
+      <div class="field">
+        <input type="text" required>
+        <label>Class</label>
+        <small>Required</small>
+      </div>
+
+      <div class="field">
+        <select required>
+          <option value="" disabled selected></option>
+          <option>ADS</option>
+          <option>Ethical Hacking</option>
+          <option>Machine Learning</option>
+          <option>IoT</option>
+        </select>
+        <label>Subject</label>
+        <small>Required</small>
+      </div>
+
+      <button class="prev">Back</button>
+      <button class="submit">Submit</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="toast error">⚠ Please fill all fields</div>
+<div class="toast success">✅ Successfully Submitted</div>
+
+<script src="script.js"></script>
+</body>
+</html>
